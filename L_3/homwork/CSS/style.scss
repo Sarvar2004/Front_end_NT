@@ -1,0 +1,396 @@
+$colorText: #222B45;
+$colorIcon: #a3aec2;
+$px: 12px;
+
+@mixin display() {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin btn($color) {
+    border: none;
+    background-color: $color;
+    font-size: 20px;
+    padding: 13px 27px;
+    border-radius: 10px;
+}
+
+@mixin withe($with, $margin) {
+    width: $with;
+    margin: $margin;
+}
+
+@mixin conten() {
+    border: 1px solid $colorIcon;
+    border-radius: 5px;
+    padding: 8px;
+    color: #8F9BB3;
+    background-color: #fafafb;
+    display: flex;
+    justify-content: space-between;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+    .contaniner {
+        @include display();
+
+        .section1 {
+            width: 25%;
+            background-color: #fafafb;
+
+            .menu {
+                @include withe(90%, 20px auto);
+                background: #fff;
+                border: 1px solid $colorIcon;
+
+                .nav_menu {
+                    border: 0.5px solid $colorIcon;
+
+                    .icons {
+                        @include withe(92%, 20px auto);
+                        font-size: 20px;
+                        @include display();
+
+                        .left {
+                            width: 30%;
+                            @include display();
+                        }
+
+                        p {
+                            color: $colorText;
+                            font-size: 20px;
+                        }
+
+                        i {
+                            color: $colorIcon;
+                        }
+                    }
+
+                    .info_user {
+                        @include withe(92%, 17px auto);
+                        @include display();
+                        align-items: center;
+
+                        .left {
+                            width: 60%;
+                            @include display();
+
+                            img {
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                                background-color: aqua;
+                            }
+
+                            p {
+                                color: $colorText;
+                                font-weight: bold;
+                                font-size: 16px;
+
+                                span {
+                                    color: $colorIcon;
+                                    font-weight: 200;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+
+                        .right {
+                            i {
+                                font-size: 20px;
+                                color: $colorIcon;
+                            }
+                        }
+                    }
+                }
+
+                .shahmatika {
+                    width: 100%;
+                    border: 0.5px solid $colorIcon;
+
+                    .box {
+                        width: 92%;
+                        margin: 15px auto;
+                        font-size: 14px;
+                        display: flex;
+                        font-weight: bold;
+
+                        p {
+                            margin-left: 15px;
+                            color: $colorText;
+                        }
+
+                        i {
+                            color: $colorIcon;
+                        }
+                    }
+                }
+
+                .noneShahmatika {
+                    .box {
+                        font-weight: bold;
+                        @include display();
+
+                        .left {
+                            display: flex;
+
+                            i {
+                                color: $colorIcon;
+                            }
+
+                        }
+
+                        .right {
+                            width: 100%;
+                            select {
+                                width: 95%;
+                                margin-left: 10px;
+                                color: $colorText;
+                                border: none;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+
+                .setings {
+
+                    background-color: #eff3ff;
+
+                    .box {
+                        @include display();
+
+                        .left {
+                            @include display();
+
+                            i {
+                                color: #3b6cff;
+                            }
+
+                            p {
+                                color: #3b6cff;
+
+                            }
+                        }
+
+                        .right {
+                            width: 100%;
+                            select {
+                                    margin-left: 10px;
+                                    width: 95%;
+                                background-color: #eff3ff;
+                                color: #3b6cff;
+                                &:focus{
+                                    outline: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .qw {
+                    .box {
+                        i {
+                            color: #fff;
+                        }
+
+                        .vash {
+                            color: #3b6cff;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .section2 {
+            width: 75%;
+            background-color: #fafafb;
+
+            .container {
+                @include withe(98%, 20px auto);
+                border: 1.5px solid $colorIcon;
+                padding: 20px 0px;
+                .nav {
+                    margin: 0px 20px;
+                    font-size: 18px;
+                }
+
+
+                .strelka {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 10px 20px;
+
+                    .input {
+                        width: 50%;
+
+                        h2 {
+                            font-size: 13px;
+                            color: #8992A3;
+                            margin: 5px 0px;
+                            font-weight: 600;
+                        }
+
+                        .conten {
+                            border: 1px solid #8992A3;
+                            width: 95%;
+                                padding: 10px;
+                            select{
+                                width: 100%;
+                                // padding: 7px;
+                                // font-size: $px;
+                                color:#8992A3;
+                                border: none;
+                                background-color: #fafafb;
+                                &:focus{
+                                    outline: none;
+                                }
+                            }
+                            input{
+                                border: none;
+                                width: 100%;
+                                // padding: 7px;
+                                // font-size: $px;
+                                background-color: #fafafb;
+                                &:focus{
+                                    outline: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .coloms_conteiner {
+                    .coloms {
+                        margin: 10px 20px;
+                        @include display();
+
+                        .input {
+
+                            width: 32%;
+
+                            h2 {
+                                font-size: 13px;
+                                color: #8992A3;
+                                margin: 5px 0px;
+                                font-weight: 600;
+                            }
+
+                            .conten {
+                                input{
+                                    width: 95%;
+                                    padding: 7px;
+                                }
+                                select{
+                                    width: 95%;
+                                    padding: 7px;
+                                    color: #8992A3;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .foterr {
+                    margin: 0px 20px;
+
+                    .input {
+                        @include withe(100%, 15px 0px);
+
+                        h2 {
+                            font-size: 15px;
+                            color: #8992A3;
+                            margin: 5px 0px;
+                            font-weight: 600;
+                        }
+
+                        .conten {
+                            select{
+                                width: 100%;
+                                padding: 7px;
+                                color: #8992A3;
+                            }                           
+                        }
+                    }
+                }
+
+                .footer {
+                    margin: 5px 20px;
+
+                    .title {
+                        h1 {
+                            font-weight: 700;
+                            font-size: $px;
+                        }
+
+                    }
+
+                    .title2 {
+                        margin: 10px 0px;
+                        display: flex;
+
+                        i,
+                        p {
+                            font-weight: 400;
+                            font-size: $px;
+                            color: #3b6cff;
+                            margin-right: 5px;
+                        }
+                    }
+
+                    .input_file {
+                        width: 150px;
+                        height: 150px;
+                        background: #EDF1F7;
+                        border: 2px dashed #bfcde5;
+                        border-radius: 8px;
+                        text-align: center;
+
+                        .img {
+                            margin-top: 30px;
+
+                            i {
+                                font-size: 40px;
+                                color: $colorText;
+                            }
+
+                            P {
+                                font-size: 18px;
+                            }
+                        }
+
+                        input {
+                            opacity: 0;
+                            position: absolute;
+                            cursor: pointer;
+                            width: 150px;
+                            height: 150px;
+                        }
+
+                    }
+                }
+
+                .btn {
+                    display: flex;
+                    justify-content: center;
+                    margin: 20px auto;
+
+                    .otmena {
+                        @include btn(#fff);
+                    }
+
+                    .sohranit {
+                        margin-left: 10px;
+                        @include btn(rgb(80, 168, 251));
+                    }
+                }
+            }
+        }
+    }
+}

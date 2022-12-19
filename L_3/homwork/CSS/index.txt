@@ -1,0 +1,103 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    .contaniner {
+        display: flex;
+        justify-content: space-between;
+
+        .section1 {
+            width: 30%;
+            height: 100vh;
+            background-color: $bagroundColor;
+
+            .menu {
+                width: 90%;
+                margin: 20px auto;
+                background: #fff;
+                border: 3px solid $bagroundColor;
+
+                .icons {
+                    width: 92%;
+                    margin: 20px auto;
+                    display: flex;
+                    font-size: 30px;
+                    justify-content: space-between;
+
+                    .left {
+                        display: flex;
+                        width: 40%;
+                        justify-content: space-between;
+                    }
+
+                    p {
+                        color: #3e465d;
+                        font-size: 30px;
+                    }
+
+                    i {
+                        color: $bagroundColor;
+                    }
+                }
+
+                .info_user {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 92%;
+                    margin: 20px auto;
+
+                    .left {
+                        display: flex;
+                        width: 50%;
+                        justify-content: space-between;
+
+                        img {
+                            border-radius: 50%;
+                            width: 40px;
+                            height: 40px;
+                            background-color: aqua;
+                        }
+
+                        p {
+                            color: #3e465d;
+                            font-weight: bold;
+
+                            span {
+                                color: #cbd0dc;
+                                font-weight: 200;
+                            }
+                        }
+                    }
+
+                    .right {
+                        i {
+                            font-size: 30px;
+                            color: #cbd0dc;
+                        }
+                    }
+                }
+
+                .shahmatika {
+                    display: flex;
+                    width: 60%;
+                    justify-content: space-between;
+                    font-size: 30px;
+                    border: 1px solid $baground;
+                }
+            }
+        }
+
+
+
+
+
+        .section2 {
+            width: 70%;
+            height: 100vh;
+            background-color: rgb(0, 0, 0);
+        }
+    }
+}
