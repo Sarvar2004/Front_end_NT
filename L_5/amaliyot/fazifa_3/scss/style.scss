@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    // animation: name duration timing-function 4 iteration-count direction fill-mode;
+    animation: rotation 5s infinite  linear;
+    position: relative;
+}
+@keyframes rotation {
+    25%{
+        border-radius: 12.5%;
+        margin-left: calc(100vw - 100px);
+    }
+    50%{
+        border-radius: 25%;
+        margin-bottom: calc(100vh - 100px);
+    }
+    75%{
+        border-radius: 37.5%;
+        margin-right: calc(0vw - 100px);
+    }
+    100%{
+        border-radius: 50%;
+        margin-top: calc(0vh - 100px);
+    }
+}

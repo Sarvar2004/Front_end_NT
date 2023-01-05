@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+// .box{
+//     animation-name: moveTheBox;
+// }
+// @keyframes moveTheBox {
+//     0%{
+
+//     }
+// }
+
+
+
+// 1 vazifa
+// .box{
+//     width: 200px;
+//     height: 200px;
+//     border-radius: 50%;
+//     border-right: 7px solid red;
+//     transform: rotate(360deg); 
+//     animation: rotation 1s infinite linear;
+// }
+
+// @keyframes rotation {
+//     from {
+//         transform: rotate(0deg);
+//     }
+//     to {
+//         transform: rotate(360deg);
+//     }
+// }
+
+
+
+// 2 vazifa
+
+// .parent{
+//     width:500px;
+//     height: 40px;
+//     background-color: dodgerblue;
+//     .fill{
+//         width: 70%;
+//         height: 100%;
+//         background-color: gray;
+//         animation: fill 3s 2s forwards;
+//     }
+// }
+// @keyframes fill {
+//     40%{
+//         width: 30%;
+//     }
+//     60%{
+//         width: 45%;
+//     }
+//     70%{
+//         width: 70%;
+//     }
+//     80%{
+
+//     }
+//     100%{
+
+//     }
+// }
+
+
+
+
+
