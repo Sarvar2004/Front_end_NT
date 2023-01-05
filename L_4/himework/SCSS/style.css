@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.navbar .navbar_navber {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 50px;
+}
+.navbar .navbar_navber .navbar__img img {
+  width: 60px;
+  height: 60px;
+  background-color: black;
+}
+.navbar .navbar_navber .navbar__ul {
+  display: flex;
+  margin-left: -380px;
+}
+.navbar .navbar_navber .navbar__ul li {
+  font-size: 14px;
+  margin: 0px 12px;
+  list-style: none;
+}
+.navbar .navbar_navber .navbar__ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+.navbar .navbar_navber .navbar__ul .one a {
+  color: #909090;
+}
+.navbar .navbar_navber .navbar__icons {
+  display: flex;
+}
+.navbar .navbar_navber .navbar__icons select {
+  margin: 0px 20px;
+  border: none;
+}
+.navbar .navbar_navber .navbar__icons button {
+  background-color: #FF6060;
+  width: 180px;
+  display: flex;
+  color: #fff;
+  border: none;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding: 5px;
+}
+.navbar .navbar_navber .navbar__icons button p, .navbar .navbar_navber .navbar__icons button i {
+  font-size: 10px;
+  margin-left: 7px;
+}
+.navbar .navbar_navber .navbar__icons .two {
+  font-size: 18px;
+  margin: 0px 10px;
+  margin-right: 0px;
+}/*# sourceMappingURL=style.css.map */
