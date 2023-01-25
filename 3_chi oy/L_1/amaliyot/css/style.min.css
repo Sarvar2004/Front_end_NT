@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
-.cardss {
+.displar {
+  display: flex;
+  justify-content: space-between;
   background-color: black;
 }/*# sourceMappingURL=style.min.css.map */
